@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int n,i;
+	double a[100];
+	printf("Enter no.of elements:");
+	scanf("%d",&n);
+	printf("Enter array elements:");
+	for(i=1;i<=n;i++)
+	{
+		scanf("%lf",&a[i]);
+	}
+	for(i=0;i<=n;i++)
+	{
+		if(a[0]<a[i])
+		{
+			a[0]=a[i];
+		}
+	}
+	printf("Largest number in an array=%.2lf",a[0]);
+	return 0;
+}
